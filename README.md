@@ -15,7 +15,42 @@ Tarot Bot — это Telegram-бот, который помогает польз
 - Telegram-бот токен.
 
 ## Как установить
-1. Скопируй файлы проекта в папку `tarot`.
-2. Открой терминал и перейди в папку `tarot`:
+1. Склонируй репозиторий с GitHub:
    ```bash
-   cd tarot
+   git clone https://github.com/твой_юзернейм/tarot-bot.git
+   cd tarot-bot
+   
+2. Установи нужные библиотеки:
+   ```bash
+   npm install
+
+3. Создай файл src/config.js с токеном бота:
+```bash
+//Токен тг бота вставлять сюда src/config.js
+module.exports = {
+    botToken: "ВАШ_ТОКЕН_BOTFATHER",
+    tarotApiUrl: "https://tarotapi.dev/api/v1",
+};
+```
+Замени ВАШ_ТОКЕН_ОТ_BOTFATHER на токен, который ты получил от @BotFather в Telegram.\
+
+Запусти бота:
+```bash
+npm start
+```
+Открой Telegram, найди своего бота и напиши "/start"
+
+Структура проекта
+src/ — тут весь код.
+bot/ — код для работы с Telegram (команды, кнопки).
+data/ — переводы карт на русский язык.
+utils/ — работа с API Таро.
+index.js — запуск бота.
+package.json — список нужных библиотек и команды для запуска.
+.gitignore — чтобы не загружать лишние файлы (например, node_modules и src/config.js).
+README.md — этот файл с инструкцией.
+
+
+
+
+

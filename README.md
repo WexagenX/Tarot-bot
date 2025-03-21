@@ -17,7 +17,7 @@ Tarot Bot — это Telegram-бот, который помогает польз
 ## Как установить
 1. Склонируй репозиторий с GitHub:
    ```bash
-   git clone https://github.com/твой_юзернейм/tarot-bot.git
+   git clone https://github.com/WexagenX/tarot-bot.git
    cd tarot-bot
    
 2. Установи нужные библиотеки:
